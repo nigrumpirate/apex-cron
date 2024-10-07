@@ -1,0 +1,10 @@
+data_payload = {
+'cino': '201800002842019',
+# 'cino': '45861',
+# 'cino': '324840',
+'cino': '203000003202020',
+'source': 'undefined'
+}
+
+data = get_case_details(data_payload)
+print(data)
