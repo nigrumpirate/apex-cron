@@ -16,7 +16,7 @@ def get_case_details(payload):
     if response.status_code == 200:
         html= response.text
         tables_data = extract_tables(html)
-        return json.dumps(tables_data)  #returns all the data as a json array
+        return tables_data #returns all the data as a json array
     else:
         raise ValueError("Could not retrieve data from URL")
 
